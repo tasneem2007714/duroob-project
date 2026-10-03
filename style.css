@@ -1,0 +1,100 @@
+:root{--n:#10264a;--c:#c9563a;--o:#ec8a3c;--g:#f0b23e;--t:#0e9f8e;--ink:#14233d;--mu:#6b7889;--cr:#fff7ea}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font:400 15px/1.6 Cairo,system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 0,#ffe2b8,transparent 40%),radial-gradient(circle at 100% 30%,#c9f1ea,transparent 38%),linear-gradient(180deg,#fff7ea,#f7e7d5 70%,#e8f5f2);min-height:100vh}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3{font-weight:700}
+.hd{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:18px;padding:10px 5vw;background:#fff7eae6;backdrop-filter:blur(14px);border-bottom:1px solid #f0d9bd}
+.logo{display:flex;align-items:baseline;gap:10px;cursor:pointer;margin-inline-end:auto}
+.logo b{font:600 46px/1 "Reem Kufi",Cairo;background:linear-gradient(120deg,var(--c),var(--g));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo span{font:600 22px Fraunces,serif;color:var(--n)}
+.lk{display:flex;gap:4px}.lk button,.lang{border:0;background:none;padding:9px 14px;border-radius:99px;font-weight:600;color:var(--n);cursor:pointer;transition:.25s}
+.lk button:hover,.lang:hover{background:#fff;transform:translateY(-2px);box-shadow:0 6px 14px #10264a1f}.lk .on{background:var(--n);color:#fff}
+.lang{border:1.5px solid var(--n);padding:6px 14px}
+.pill{font-size:11px;font-weight:700;padding:5px 11px;border-radius:99px;background:#fff;color:var(--mu);display:flex;gap:6px;align-items:center}
+.pill:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--g)}.pill.ok:before{background:#22b573;box-shadow:0 0 0 4px #22b57330}
+main{padding:22px 5vw 40px;max-width:1280px;margin:0 auto}
+.v{animation:in .5s ease}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}@keyframes up{from{opacity:0;transform:translateY(26px)}}
+.ph{display:flex;align-items:center;gap:12px;margin:6px 0 20px}.ph h1{font:600 clamp(24px,3.5vw,36px) Fraunces,Cairo,serif;color:var(--n)}
+.bk{width:40px;height:40px;border-radius:50%;border:0;background:#fff;box-shadow:0 4px 12px #10264a22;font-size:22px;color:var(--n);cursor:pointer;transition:.25s}.bk:hover{transform:scale(1.05)}
+.hero{position:relative;height:clamp(420px,60vh,540px);border-radius:34px;overflow:hidden;color:#fff;display:flex;flex-direction:column;justify-content:flex-start;padding:clamp(15px,3vw,30px);box-shadow:0 28px 60px #7a2e2a40;margin-bottom:34px}
+.hero .sc{position:absolute;inset:0;opacity:0;transition:opacity 1.6s}.hero .sc.on{opacity:1}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#10264a22 0%,#10264ad0 85%)}
+.hero>.z{position:relative;z-index:2;margin-top:-10px}
+.hero .big{font:700 clamp(55px,11vw,125px)/0.9 "Reem Kufi",Cairo;text-shadow:0 6px 30px #0008;margin:0 0 -5px 0;display:block;position:relative;top:-20px}
+.hero .en{font:600 clamp(16px,2.5vw,28px)/1.1 Fraunces,serif;letter-spacing:6px;opacity:.95;margin-bottom:12px;display:block}
+.hero p{font-size:clamp(15px,2vw,20px);margin:4px 0 16px;opacity:.95}
+.hero .mood-question{font-weight:800;margin:8px 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{border:1.5px solid #e6cfb4;background:#fff;border-radius:99px;padding:8px 18px;font-weight:600;font-size:14px;cursor:pointer;transition:.25s}
+.chip:hover{transform:translateY(-3px);box-shadow:0 8px 16px #10264a26}
+.chip.on{background:var(--c);border-color:var(--c);color:#fff;font-weight:800;transform:scale(1.05)}
+.hero .chip{background:#ffffff26;backdrop-filter:blur(8px);color:#fff;border-color:#ffffff66}.hero .chip.on{background:var(--g);color:#3a2100;border-color:var(--g)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.btn{border:0;border-radius:16px;padding:14px 26px;font-weight:700;cursor:pointer;background:linear-gradient(90deg,var(--c),var(--o));color:#fff;box-shadow:0 10px 24px #c9563a55;transition:.25s;display:inline-flex;gap:10px;align-items:center;justify-content:center}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 30px #c9563a66}.btn:active{transform:scale(.97)}
+.btn.o{background:#fff;color:var(--n);border:1.5px solid var(--t);box-shadow:none}
+.btn.plan{background:linear-gradient(90deg,#0e9f8e,#22b573);box-shadow:0 10px 24px #0e9f8e55}
+.btn.book{background:linear-gradient(90deg,#c9563a,#ec8a3c);padding:10px 20px;font-size:13px;border-radius:12px;margin-top:10px;width:100%}
+.blk{display:flex;width:100%}
+h3{font:600 clamp(22px,3vw,30px) Fraunces,Cairo,serif;color:var(--n);margin:34px 0 16px}
+.sub{color:var(--mu);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}.grid>*{animation:up .55s both;animation-delay:calc(var(--i)*70ms)}
+.card{background:#fff;border-radius:24px;overflow:hidden;cursor:pointer;position:relative;box-shadow:0 8px 24px #10264a17;transition:.3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 22px 40px #10264a2b}
+.card .gallery{height:170px;border-radius:0;margin:0}.card .gallery img{border-radius:0}.card:hover .gallery img{transform:scale(1.06)}.card .im{overflow:hidden}
+.gallery{position:relative;height:180px;overflow:hidden;border-radius:16px;margin-bottom:12px;background:linear-gradient(110deg,#eceff1 8%,#f5f7f8 18%,#eceff1 33%);background-size:200% 100%;animation:shine 1.5s infinite}
+.gallery img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s ease,transform .5s ease}
+.gallery img.on{opacity:1}
+.gallery-empty{height:100%;display:flex;align-items:center;justify-content:center;padding:16px;color:#94a3b8;font-weight:700;font-size:13px;text-align:center}
+.city-hero{position:relative;overflow:hidden}
+.city-hero-gallery{position:absolute;inset:0;height:auto!important;margin:0;border-radius:0;z-index:0}
+.city-hero-gallery:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#10264a22,#10264ad0)}
+.city-hero>.z{z-index:2}
+.tx{padding:16px;display:flex;flex-direction:column}.tx b{font-size:17px}.tx span{font-size:13px;color:var(--mu)}.tx em{font-style:normal;font-size:12px;font-weight:700;color:var(--t);margin-top:4px}
+.img-placeholder{height:180px;background:linear-gradient(110deg,#eceff1 8%,#f5f7f8 18%,#eceff1 33%);background-size:200% 100%;animation:shine 1.5s infinite;display:flex;align-items:center;justify-content:center;color:#94a3b8;font-weight:700;font-size:13px;border-radius:16px;margin-bottom:12px;background-size:cover;background-position:center}
+@keyframes shine{to{background-position-x:-200%}}
+.rel-card{background:#fff;border-radius:24px;padding:20px;box-shadow:0 8px 24px #10264a12;border:1px solid #f0e6d8;transition:.3s;margin-bottom:20px}
+.rel-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px #10264a20}
+.rel-card h3{margin:0 0 8px;font-size:20px;color:var(--n)}
+.rel-card p{font-size:14px;color:#4c6478;line-height:1.7}
+.local-card{background:#fff;border-radius:22px;padding:18px;border:1.5px solid #ebd3bc;box-shadow:0 10px 25px #10264a10;display:flex;flex-direction:column;justify-content:space-between;transition:.3s}
+.local-card:hover{transform:translateY(-6px);border-color:var(--c);box-shadow:0 18px 35px #10264a1f}
+.city-layout{display:grid;grid-template-columns:2fr 1fr;gap:24px;margin-top:20px}
+@media(max-width:900px){.city-layout{grid-template-columns:1fr}}
+#jordanMap{height:clamp(340px,55vh,560px);width:100%;margin:18px 0;border:1px solid #e6cfb4;border-radius:24px;overflow:hidden;background:#e7edf1;box-shadow:0 10px 25px #10264a12}
+.leaflet-container{font:13px Cairo,system-ui,sans-serif}
+.map-open{border:0;background:none;color:var(--c);font:700 13px Cairo,system-ui,sans-serif;padding:7px 0;cursor:pointer}
+.sos-list{display:grid;gap:12px;margin:18px 0}
+.sos-row{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;padding:14px;border-radius:16px;border:1px solid #ebd3bc}
+.sos-row b,.sos-row span{display:block}
+.sos-row span{font-size:13px;color:var(--mu);direction:ltr;text-align:start}
+.sos-call{padding:10px 16px;white-space:nowrap;text-decoration:none}
+@media(max-width:480px){.sos-row{align-items:flex-start;flex-direction:column}.sos-call{width:100%}}
+.trip-type-card{background:#fff;border-radius:20px;padding:20px;border:2px solid #eef2f6;cursor:pointer;transition:.3s;margin-bottom:14px}
+.trip-type-card:hover,.trip-type-card.active{border-color:var(--c);box-shadow:0 10px 25px #c9563a20;transform:translateY(-3px)}
+.note{background:#fff;border-inline-start:4px solid var(--t);border-radius:6px 16px 16px 6px;padding:13px 16px;font-size:13px;color:#4c6478;margin:14px 0;box-shadow:0 4px 14px #10264a10}
+input,select,textarea{width:100%;border:0;background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 2px 10px #10264a14;transition:.25s}
+.bn{display:none}
+.fab{position:fixed;inset-inline-end:22px;bottom:22px;z-index:30;width:70px;height:70px;border-radius:50%;border:0;background:linear-gradient(135deg,#e5484d,#a5190f);color:#fff;font-weight:800;font-size:16px;cursor:pointer;box-shadow:0 12px 30px #a5190f88;transition:.25s}.fab:hover{transform:scale(1.1)}
+.sh{position:fixed;inset:0;z-index:40;background:#10264a99;display:none;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(4px)}.sh.on{display:flex}
+.sp{background:var(--cr);border-radius:28px;padding:22px;width:100%;max-width:520px;max-height:92vh;overflow:auto;animation:up .35s}.sp h2{font:600 26px Fraunces,Cairo,serif;color:var(--n)}
+.cat-box{background:#fff;color:var(--n);padding:18px;border-radius:20px;margin-bottom:12px;cursor:pointer;transition:.3s;box-shadow:0 8px 20px #10264a15;border:1.5px solid #eef2f6;display:flex;align-items:center;gap:14px}.cat-box:hover{transform:translateY(-3px);box-shadow:0 12px 28px #10264a25;border-color:var(--o)}
+.cat-box i{font-style:normal;font-size:28px;width:50px;height:50px;border-radius:16px;background:#f7e7d5;display:grid;place-items:center;flex:none}
+.video-placeholder{height:200px;border-radius:18px;background:linear-gradient(145deg,#10264a,#31556c 55%,#c9563a);color:#fff;display:grid;place-items:center;text-align:center;padding:18px;margin-bottom:14px}
+.video-placeholder strong{display:block;font-size:20px}
+.video-placeholder span{display:block;font-size:13px;opacity:.86;margin-top:5px}
+.toast{position:fixed;left:50%;bottom:110px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:99px;font-weight:600;opacity:0;transition:.3s;pointer-events:none;z-index:50}.toast.show{opacity:1;transform:translate(-50%,0)}
+footer{margin-top:40px;padding:30px 5vw 130px;background:var(--n);color:#dbe6f5;text-align:center}footer b{font:600 34px "Reem Kufi";color:var(--g)}footer p{max-width:560px;margin:8px auto 0;font-size:13px;opacity:.85}
+@media(max-width:820px){.lk,.hd .pill{display:none}.logo b{font-size:40px}.bn{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:25;background:#fffffff0;backdrop-filter:blur(14px);border-radius:24px;padding:7px;box-shadow:0 12px 30px #10264a33}.bn button{flex:1;border:0;background:none;padding:9px 0;border-radius:18px;font-size:11.5px;font-weight:700;color:var(--mu)}.bn .on{background:var(--n);color:#fff}.fab{bottom:88px;width:60px;height:60px;font-size:14px}.toast{bottom:150px}}
+.card-save{position:absolute;z-index:2;top:12px;inset-inline-end:12px;width:38px;height:38px;border:0;border-radius:50%;background:#fff;color:var(--c);font-size:23px;cursor:pointer;box-shadow:0 4px 12px #10264a22}
+.hid-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.hid-card{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 8px 24px #10264a17;transition:.3s}
+.hid-card:hover{transform:translateY(-8px);box-shadow:0 22px 40px #10264a2b}
+.hid-card:hover .gallery img{transform:scale(1.06)}
+.hid-card .gallery{height:300px;border-radius:0;margin:0}
+.hid-card .tx{padding:12px 16px}
+.hid-card .tx p{font-size:12.5px;color:var(--mu);margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card,.hid-card{border:1.5px solid #ebd3bc}
+.card:hover,.hid-card:hover{border-color:var(--c)}
