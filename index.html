@@ -6,11 +6,11 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="style.css"></head><body>
 <header class="hd"><div class="logo" data-nav="home"><b>دروب</b><span>Duroob</span></div>
-<nav class="lk"><button data-nav="home">Discover</button><button data-nav="map">Map</button><button data-nav="planner">Budget Planner</button><button data-nav="trips">Tours & Trips</button><button data-nav="stories">Digital Guide</button><button data-nav="saved">Saved</button></nav>
-<span class="pill" id="st">Demo</span><button class="lang" data-act="lang">EN</button></header>
+<nav class="lk"><button data-nav="home">Discover</button><button data-nav="map">Map</button><button data-nav="souq">Souq</button><button data-nav="planner">Budget Planner</button><button data-nav="trips">Tours & Trips</button><button data-nav="stories">Digital Guide</button><button data-nav="saved">Saved</button></nav>
+<button class="lang" data-act="lang">EN</button><button id="loginBtn" class="login-btn">تسجيل الدخول</button></header>
 <main id="view"></main>
 <footer><b>دروب</b><p id="ft"></p></footer>
-<nav class="bn"><button data-nav="home">Discover</button><button data-nav="map">Map</button><button data-nav="planner">Planner</button><button data-nav="trips">Trips</button><button data-nav="stories">Digital Guide</button><button data-nav="saved">Saved</button></nav>
+<nav class="bn"><button data-nav="home">Discover</button><button data-nav="map">Map</button><button data-nav="souq">Souq</button><button data-nav="stories">Digital Guide</button><button data-nav="saved">Saved</button></nav>
 <button class="fab" data-act="sheet" aria-label="SOS">SOS</button>
 
 <div class="sh" id="planModal"><div class="sp">
@@ -46,6 +46,26 @@
     <div class="sos-row"><div><b id="sosAmbulanceName">الإسعاف / الدفاع المدني</b><span>193</span></div><a class="btn sos-call" href="tel:193" id="sosAmbulanceCall">اتصال</a></div>
   </div>
   <button class="btn o blk" id="closeSosBtn">إغلاق</button>
+</div></div>
+
+<div id="authModal" class="auth-modal"><div class="auth-box">
+  <h2>تسجيل الدخول</h2>
+  <button id="googleBtn">المتابعة عبر Google</button>
+  <input id="emailInput" type="email" placeholder="البريد الإلكتروني">
+  <input id="passInput" type="password" placeholder="كلمة المرور">
+  <button id="emailLoginBtn">دخول</button>
+  <button id="emailSignupBtn">إنشاء حساب</button>
+  <p id="authMsg"></p>
+  <button id="closeAuthBtn">إغلاق</button>
+</div></div>
+<div id="profileModal" class="auth-modal"><div class="auth-box">
+  <h2>حسابي</h2>
+  <p id="profName"></p>
+  <p id="profEmail"></p>
+  <button id="resetPassBtn">تغيير كلمة المرور</button>
+  <p id="profMsg"></p>
+  <button id="logoutBtn">تسجيل الخروج</button>
+  <button id="closeProfBtn">إغلاق</button>
 </div></div>
 <div class="toast" id="ts"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script type="module" src="script.js"></script></body></html>
